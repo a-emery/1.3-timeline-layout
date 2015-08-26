@@ -1,0 +1,135 @@
+.fullitem {
+  margin: 20px auto 0 auto;
+  width: 90%;
+  position: relative;
+  max-width: 600px;
+  display: block;
+  border: thin solid transparent;
+}
+
+.dateandtime {
+  float: left;
+  margin: -62px 0 0 -20px;
+}
+
+p {
+  margin: 0;
+}
+
+.date {
+  color: #B3D0DD;
+  font-size: .3em;
+}
+
+.time {
+  color: #4CB2F5;
+
+}
+
+.icon {
+  float: right;
+  position: relative;
+  right: 10px;
+}
+
+.content {
+  background-color: #53BFF5;
+  margin: 43px 0 0 0;
+  padding: 20px 20px;
+  border: thin solid white;
+  border-radius: 7px;
+  max-width: 600px;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #54C0F5;
+  margin: -28px 0 22px 0;
+}
+
+.recipetitle {
+  color: white;
+  border-bottom: thin solid white;
+  padding: 0 0 19px 0;
+  margin: 0;
+}
+
+.recipe {
+  color: white;
+  margin: 19px 0 0 0;
+}
+
+.content:hover {
+  background-color: #3C93D2;
+}
+
+.content:hover .triangle {
+  border-bottom: 7px solid #3C93D2;
+}
+
+.content:hover .time {
+  color: #3C93D2;
+}
+
+@media (min-width: 992px) {
+
+  .fullitem {
+    width: 90%;
+    max-width: 1200px;
+    border: thin solid green;
+  }
+
+  .fullitem::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .content {
+    max-width: 80%;
+    float:right;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .icon {
+    float: left;
+    margin: 0 0 0 14%;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    right: 1%;
+  }
+
+  .dateandtime {
+    width: 10%;
+    text-align: right;
+    margin: 0 0 0 -150px;
+    position: relative;
+    right: 10%;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-right: 7px solid #54C0F5;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    margin: -7px 0 0 -34px;
+  }
+
+  .recipetitle {
+    padding: ;
+  }
+
+  .content:hover .triangle {
+    border-right: 7px solid #3C93D2;
+    border-bottom: 7px solid transparent;
+  }
+
+}
