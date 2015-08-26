@@ -1,3 +1,7 @@
+body {
+  padding: 30px 0;
+}
+
 .fullitem {
   margin: 20px auto 0 auto;
   width: 90%;
@@ -19,10 +23,12 @@ p {
 .date {
   color: #B3D0DD;
   font-size: .3em;
+  font-weight: normal;
 }
 
 .time {
   color: #4CB2F5;
+  font-weight: normal;
 
 }
 
@@ -33,7 +39,7 @@ p {
 }
 
 .content {
-  background-color: #53BFF5;
+  background-color: #6AC1F0;
   margin: 43px 0 0 0;
   padding: 20px 20px;
   border: thin solid white;
@@ -44,9 +50,9 @@ p {
 .triangle {
 	width: 0;
 	height: 0;
-	border-left: 7px solid transparent;
-	border-right: 7px solid transparent;
-	border-bottom: 7px solid #54C0F5;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #54C0F5;
   margin: -28px 0 22px 0;
 }
 
@@ -74,12 +80,11 @@ p {
   color: #3C93D2;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 700px) {
 
   .fullitem {
-    width: 90%;
+    width: 60%;
     max-width: 1200px;
-    border: thin solid green;
   }
 
   .fullitem::after {
@@ -89,38 +94,44 @@ p {
   }
 
   .content {
-    max-width: 80%;
+    max-width: 84%;
     float:right;
     margin: 0;
     display: inline-block;
     vertical-align: top;
+    position: relative;
   }
 
   .icon {
     float: left;
-    margin: 0 0 0 14%;
+    margin: 0;
     padding: 0;
-    position: relative;
+    position: absolute;
     display: inline-block;
     vertical-align: top;
-    right: 1%;
+    right: 28px;
+    top: -5px;
+  }
+
+  .iconwrap {
+    width: 17%;
+    position: relative;
   }
 
   .dateandtime {
-    width: 10%;
     text-align: right;
-    margin: 0 0 0 -150px;
-    position: relative;
-    right: 10%;
+    margin: -17px 0 0 -160px;
+    position: absolute;
+    left: -30px;
   }
 
   .triangle {
     width: 0;
     height: 0;
-    border-right: 7px solid #54C0F5;
-    border-bottom: 7px solid transparent;
-    border-top: 7px solid transparent;
-    margin: -7px 0 0 -34px;
+    border-right: 8px solid #54C0F5;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    margin: -9px 0 0 -36px;
   }
 
   .recipetitle {
@@ -132,4 +143,30 @@ p {
     border-bottom: 7px solid transparent;
   }
 
+  .date {
+    font-size: .8em;
+  }
+
+  .time {
+    font-size: 2.5em;
+    color: #64BCED;
+  }
+
+  .iconimg {
+    width: 50px;
+  }
+
+  .line {
+    border: 4px #AFDCF9 solid;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    bottom: -23px;
+    z-index: 1;
+  }
+
+  .imgicon {
+    z-index: -1;
+  }
 }

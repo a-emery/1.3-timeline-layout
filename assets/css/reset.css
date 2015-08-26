@@ -1,3 +1,14 @@
+p,
+h1,
+h2,
+h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-weight: lighter;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
