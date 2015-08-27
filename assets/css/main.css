@@ -61,7 +61,7 @@ p {
 
 .recipetitle {
   color: white;
-  border-bottom: thin solid white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);;
   padding: 0 0 19px 0;
   margin: 0;
 }
