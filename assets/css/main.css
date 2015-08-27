@@ -1,0 +1,172 @@
+body {
+  padding: 30px 0;
+}
+
+.fullitem {
+  margin: 20px auto 0 auto;
+  width: 90%;
+  position: relative;
+  max-width: 600px;
+  display: block;
+  border: thin solid transparent;
+}
+
+.dateandtime {
+  float: left;
+  margin: -62px 0 0 -20px;
+}
+
+p {
+  margin: 0;
+}
+
+.date {
+  color: #B3D0DD;
+  font-size: .3em;
+  font-weight: normal;
+}
+
+.time {
+  color: #4CB2F5;
+  font-weight: normal;
+
+}
+
+.icon {
+  float: right;
+  position: relative;
+  right: 10px;
+}
+
+.content {
+  background-color: #6AC1F0;
+  margin: 43px 0 0 0;
+  padding: 20px 20px;
+  border: thin solid white;
+  border-radius: 7px;
+  max-width: 600px;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #54C0F5;
+  margin: -28px 0 22px 0;
+}
+
+.recipetitle {
+  color: white;
+  border-bottom: thin solid white;
+  padding: 0 0 19px 0;
+  margin: 0;
+}
+
+.recipe {
+  color: white;
+  margin: 19px 0 0 0;
+}
+
+.content:hover {
+  background-color: #3C93D2;
+}
+
+.content:hover .triangle {
+  border-bottom: 7px solid #3C93D2;
+}
+
+.content:hover .time {
+  color: #3C93D2;
+}
+
+@media (min-width: 700px) {
+
+  .fullitem {
+    width: 60%;
+    max-width: 1200px;
+  }
+
+  .fullitem::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .content {
+    max-width: 84%;
+    float:right;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+
+  .icon {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    right: 28px;
+    top: -5px;
+  }
+
+  .iconwrap {
+    width: 17%;
+    position: relative;
+  }
+
+  .dateandtime {
+    text-align: right;
+    margin: -17px 0 0 -160px;
+    position: absolute;
+    left: -30px;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-right: 8px solid #54C0F5;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    margin: -9px 0 0 -36px;
+  }
+
+  .recipetitle {
+    padding: ;
+  }
+
+  .content:hover .triangle {
+    border-right: 7px solid #3C93D2;
+    border-bottom: 7px solid transparent;
+  }
+
+  .date {
+    font-size: .8em;
+  }
+
+  .time {
+    font-size: 2.5em;
+    color: #64BCED;
+  }
+
+  .iconimg {
+    width: 50px;
+  }
+
+  .line {
+    border: 4px #AFDCF9 solid;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    bottom: -23px;
+    z-index: 1;
+  }
+
+  .imgicon {
+    z-index: -1;
+  }
+}
