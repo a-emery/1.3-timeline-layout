@@ -76,7 +76,7 @@ p {
 }
 
 .content:hover .triangle {
-  border-bottom: 7px solid #3C93D2;
+  border-bottom: 8px solid #3C93D2;
 }
 
 .content:hover .time {
@@ -143,8 +143,8 @@ p {
   }
 
   .content:hover .triangle {
-    border-right: 7px solid #3C93D2;
-    border-bottom: 7px solid transparent;
+    border-right: 8px solid #3C93D2;
+    border-bottom: 8px solid transparent;
   }
 
   .date {
