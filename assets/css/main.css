@@ -1,3 +1,5 @@
+@media all and (max-width: 700px) {
+
 body {
   padding: 30px 0;
 }
@@ -82,8 +84,9 @@ p {
 .content:hover .time {
   color: #3C93D2;
 }
+}
 
-@media all and (min-width: 700px) {
+
 
   .fullitem {
     width: 60%;
@@ -173,4 +176,3 @@ p {
   .imgicon {
     z-index: -1;
   }
-}
